@@ -1,17 +1,19 @@
-# build output
+# Build output
 dist/
-# generated types
-.astro/
-# dependencies
+.output/
+
+# Dependencies
 node_modules/
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-# environment variables
-.env.production
-# macOS
-.DS_Store
-# base de donnees SQLite (transferee a la main)
+
+# Astro
+.astro/
+
+# Variables d'environnement (Sécurité)
+.env
+.env.*
+
+# Base de données (La consigne spécifique du prof !)
+data/clients.db
 data/*.db
+*.sqlite
+*.sqlite3
